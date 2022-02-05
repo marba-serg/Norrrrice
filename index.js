@@ -3,6 +3,7 @@ let jokeBtn = document.querySelector('.joke-btn');
 let img = document.querySelector('.img');
 let wrap = document.querySelector('.wrap');
 const foto = document.querySelector('.foto');
+const audio = document.querySelector('audio')
 let color = ['PeachPuff ', 'PaleTurquoise ', 'LightSalmon ', 'Khaki ', 'LightSteelBlue ', 'LightPink']
 let i = 0
 
@@ -32,4 +33,5 @@ async function generateJoke() {
     i++
   }
   joke.innerText = data.value;
+  audio.play();
 }
