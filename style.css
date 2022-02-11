@@ -16,18 +16,22 @@ body {
   margin: 0;
   height: 100vh;
 }
+
 /************** TRANSLATE *************/
 .goog-text-highlight {
   background-color: transparent !important;
   box-shadow: none !important;
 }
+
 .skiptranslate {
   display: none !important;
   height: 0 !important;
 }
+
 .language__img {
   cursor: pointer;
 }
+
 /*************************************/
 
 .language {
@@ -44,9 +48,11 @@ body {
   color: #686de0;
   transition: 0.3s;
 }
+
 .language__img_active {
   color: #686de0;
 }
+
 .container {
   text-align: center;
   max-width: 100%;
@@ -73,15 +79,18 @@ body {
   background-color: pink;
 }
 
-.foto {
-  margin-bottom: 60px;
-  max-width: 40%;
-  width: 250px;
+.foto-wrap {
+  width: 340px;
 }
 
-.foto:hover,
-.foto:focus,
-.foto:active {
+
+.foto {
+  margin-bottom: 60px;
+  /* max-width: 40%; */
+  width: 100%;
+}
+
+.active {
   -webkit-animation-name: foto;
   animation-name: foto;
   -webkit-animation-duration: 0.75s;
@@ -156,9 +165,10 @@ body {
   height: 40px;
 }
 
-.rss:hover {
-  filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
-    contrast(87%);
+
+.rss:hover,
+.git-link:hover {
+  filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
   transition: 0.3s;
 }
 
